@@ -2,6 +2,14 @@ package numbers;
 
 import java.util.Scanner;
 
+/*				Even or Odd
+ * 		Given a Number number
+ * 
+ * 			number%2 equals 0
+ * 				Even 
+ * 				Odd
+ */
+
 public class EvenOrOdd {
 
 	public static void main(String[] args) {
