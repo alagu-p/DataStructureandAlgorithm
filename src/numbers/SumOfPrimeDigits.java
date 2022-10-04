@@ -38,3 +38,9 @@ public class SumOfPrimeDigits {
 	}
 
 }
+
+
+
+// test git commit
+// test git commit
+// test git commit
