@@ -20,9 +20,10 @@ public class FindIftheStringhasGoldInIt {
 			for( j=0;j<s.length();j++)
 			{
 				if(text.charAt(k) !=s.charAt(j))
-				{
+				{ 
 					break;
 				}
+				//increment inside text index value
 				k++;	
 			}
 			if(j==s.length()) {
