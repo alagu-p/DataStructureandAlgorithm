@@ -21,4 +21,5 @@ public class CountTheDigits {
 		sc.close();
 	}
 
+	
 }
