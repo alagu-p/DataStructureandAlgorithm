@@ -2,7 +2,7 @@ package arraysAndMatrix;
 
 import java.util.Scanner;
 
-public class MiniPeaks {
+public class ArrayMinandMax {
 
 	public static void main(String[] args) {
 
@@ -14,13 +14,20 @@ public class MiniPeaks {
 		{
 			arr[i]=sc.nextInt();
 		}
-		for(int i=1;i<arr.length-1;i++)
+		int min=arr[0];
+		int max=arr[0];
+	
+		for(int i=0;i<arr.length;i++)
 		{
-			if(arr[i]>arr[i-1] && arr[i]>arr[i+1])
-			{
-				System.out.println("Mini Peaks : "+arr[i]);
-			}
+			if(min>arr[i])
+				min=arr[i];
+			if(max<arr[i])
+				max=arr[i];
+			
 		}
+		System.out.println("Maximum value : "+max);
+		System.out.println("Minimum value : "+min);
+
 		sc.close();
 	}
 
