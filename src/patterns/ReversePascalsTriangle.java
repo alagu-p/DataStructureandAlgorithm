@@ -2,7 +2,7 @@ package patterns;
 
 import java.util.Scanner;
 
-public class PascalsTriangle {
+public class ReversePascalsTriangle {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
@@ -10,20 +10,28 @@ public class PascalsTriangle {
 		int num=sc.nextInt();
 		for(int i=1;i<=num;i++)
 		{
-			for(int j=1;j<=i;j++)
+			for(int j=i;j<=num;j++)
 			{
-				System.out.print(" *");
+				System.out.print(" ");
 			}
+			for(int k=1;k<=i;k++)
+				System.out.print(" *");
 			System.out.println();	
 	}
-		for(int i=1;i<=num;i++)
+		for(int i=num;i>=1;i--)
 		{
 			for(int j=i;j<=num;j++)
 			{
-				System.out.print(" *");
+				System.out.print("  ");
 			}
+			for(int k=1;k<i;k++)
+				System.out.print(" *");
 			System.out.println();	
 	}
+		
+		
+	
 		sc.close();
 	}
+
 }
