@@ -2,7 +2,7 @@ package patterns;
 
 import java.util.Scanner;
 
-public class MirrorRightTriangle {
+public class PascalsTriangle {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
@@ -12,11 +12,12 @@ public class MirrorRightTriangle {
 		{
 			for(int j=1;j<=num;j++)
 			{
-				if(j<=num-i)
-				System.out.print("  ");
-				else
-					System.out.print(+j);
-			}
+				if(j<i)
+				{
+					System.out.print("  ");
+				}
+				else 
+					System.out.print(j);}
 			System.out.println();
 		}
 		

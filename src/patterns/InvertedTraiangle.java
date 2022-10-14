@@ -16,6 +16,7 @@ public class InvertedTraiangle {
 				System.out.print(j+" ");
 			System.out.println();
 		}
+		sc.close();
 	}
 
 }
