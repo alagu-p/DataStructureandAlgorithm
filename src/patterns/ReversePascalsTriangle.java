@@ -15,7 +15,7 @@ public class ReversePascalsTriangle {
 				System.out.print(" ");
 			}
 			for(int k=1;k<=i;k++)
-				System.out.print(" *");
+				System.out.print("*");
 			System.out.println();	
 	}
 		for(int i=num;i>=1;i--)
@@ -25,7 +25,7 @@ public class ReversePascalsTriangle {
 				System.out.print("  ");
 			}
 			for(int k=1;k<i;k++)
-				System.out.print(" *");
+				System.out.print("*");
 			System.out.println();	
 	}
 		
