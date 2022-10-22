@@ -4,7 +4,7 @@ public class Convert24hoursTime {
 	
 	public static void main(String arg[])
 	{
-		String str="07:05:45PM";
+		String str="07:05:45AM";
 		print24(str);
 	}
 
@@ -13,12 +13,26 @@ public class Convert24hoursTime {
 		  int h1=(int)str.charAt(1)-'0';
 		  int h2= str.charAt(0)-'0';
 		  int hh=(h2*10+h1%10);
+		  System.out.println(hh);
 		  
 		  if(str.charAt(8)=='A')
 		  {
 			  if(hh==12)
 			  {
 				  System.out.println("00");
+				  for(int i=2;i<=7;i++)
+					  System.out.print(str.charAt(i));
+			  }
+			  else
+			  {
+				  for(int i=0;i<=7;i++)
+					  System.out.print(str.charAt(i));
+			  }
+		  }
+		  else {
+			  if(hh==12)
+			  {
+				  System.out.println("12");
 				  for(int i=2;i<=7;i++)
 					  System.out.print(str.charAt(i));
 			  }
