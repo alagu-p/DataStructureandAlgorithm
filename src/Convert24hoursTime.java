@@ -32,7 +32,7 @@ public class Convert24hoursTime {
 		  else {
 			  if(hh==12)
 			  {
-				  System.out.println("12");
+				  System.out.print("12");
 				  for(int i=2;i<=7;i++)
 					  System.out.print(str.charAt(i));
 			  }
