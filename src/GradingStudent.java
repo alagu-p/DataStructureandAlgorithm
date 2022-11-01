@@ -18,7 +18,6 @@ public class GradingStudent {
 			{
 				if(ans%5>=3)
 					ans +=5-(ans%5);
-				System.out.println(ans);
 			}
 			lms.add(ans);
 			
